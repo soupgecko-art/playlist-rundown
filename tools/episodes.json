@@ -1,10 +1,22 @@
 {
-  "2026-11-06": {"title": "Black Thursday, the Binance hack, and a fight about gold",
-    "summary": "Eight shows on the day the midterm rally reversed into one of the worst Nasdaq days since 2018, led by semis and memory, plus the Binance hack a week on and a genuine disagreement about gold."},
-  "2026-11-14": {"title": "Jensen Huang is out at Nvidia, and bitcoin breaks $70K",
-    "summary": "Eight shows on Jensen Huang's exit from Nvidia (the spy report, the affairs, the board's speed, and who benefits), bitcoin falling below seventy thousand, a Fed talking about hikes, Anthropic's IPO and tokenized stocks."},
-  "2026-11-15": {"title": "Who are you, really, and can you change?",
-    "summary": "A change of pace: six philosophy and self-help shows, from a Confucian philosopher on social roles to Olivia Wilde, Gary Shteyngart, Trent Shelton and Shawn Achor, lined up around one question about identity and change."},
-  "2026-11-17": {"title": "What has to give? Democrats and crypto, Nvidia's trilemma, GTA 6",
-    "summary": "A mixed batch of eight: what a Democratic Congress means for crypto, Odd Lots on the impossible trilemma over Nvidia, AI-native companies, GTA 6 as a mirror of America, Frank Giustra, Charlie Shrem, the Anthropic IPO, and AI and moral blind spots."}
+  "2026-11-06": {
+    "title": "Black Thursday, the Binance hack, and a fight about gold",
+    "summary": "Eight shows on the day the midterm rally reversed into one of the worst Nasdaq days since 2018, led by semis and memory, plus the Binance hack a week on and a genuine disagreement about gold."
+  },
+  "2026-11-14": {
+    "title": "Jensen Huang is out at Nvidia, and bitcoin breaks $70K",
+    "summary": "Eight shows on Jensen Huang's exit from Nvidia (the spy report, the affairs, the board's speed, and who benefits), bitcoin falling below seventy thousand, a Fed talking about hikes, Anthropic's IPO and tokenized stocks."
+  },
+  "2026-11-15": {
+    "title": "Who are you, really, and can you change?",
+    "summary": "A change of pace: six philosophy and self-help shows, from a Confucian philosopher on social roles to Olivia Wilde, Gary Shteyngart, Trent Shelton and Shawn Achor, lined up around one question about identity and change."
+  },
+  "2026-11-17": {
+    "title": "What has to give? Democrats and crypto, Nvidia's trilemma, GTA 6",
+    "summary": "A mixed batch of eight: what a Democratic Congress means for crypto, Odd Lots on the impossible trilemma over Nvidia, AI-native companies, GTA 6 as a mirror of America, Frank Giustra, Charlie Shrem, the Anthropic IPO, and AI and moral blind spots."
+  },
+  "2026-11-18": {
+    "title": "Anthropic IPO week, Bitcoin's crash to $62K, and rogue AI agents",
+    "summary": "A longer rundown: ten minutes of headlines from eleven episodes, then deep dives on the Anthropic IPO, the Bitcoin bull and bear cases, the chip war, and machines that see and act."
+  }
 }
