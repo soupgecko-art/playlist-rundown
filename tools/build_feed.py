@@ -50,18 +50,20 @@ def build(base):
     site = os.path.join(HERE, "site"); os.makedirs(os.path.join(site, "episodes"), exist_ok=True)
     items = []
     for mp3 in sorted(glob.glob(os.path.join(RUNS, "*", "playlist-rundown-*.mp3"))):
-        date = re.search(r"(\d{4}-\d{2}-\d{2})\.mp3$", mp3).group(1)
-        name = f"playlist-rundown-{date}.mp3"; dst = os.path.join(site, "episodes", name)
+        mm = re.search(r"playlist-rundown-((\d{4}-\d{2}-\d{2})(-[a-z0-9-]+)?)\.mp3$", mp3)
+        key, date = mm.group(1), mm.group(2)  # key = date plus optional suffix for bonus episodes
+        name = f"playlist-rundown-{key}.mp3"; dst = os.path.join(site, "episodes", name)
         if not os.path.exists(dst) or os.path.getsize(dst) != os.path.getsize(mp3):
             shutil.copyfile(mp3, dst)
-        m = {**auto_meta(date), **meta.get(date, {})}
+        m = {**auto_meta(date), **meta.get(key, {})}
+        if key != date and key not in meta: m["shows"] = []
         secs = duration(dst)
         # publish at 07:00 UTC on the run date unless overridden
         pub = dt.datetime.fromisoformat(m.get("published", f"{date}T07:00:00+00:00"))
         desc_txt = m["summary"] + ("\n\nShows covered:\n" + "\n".join("- " + s for s in m["shows"]) if m["shows"] else "")
         desc_html = f"<p>{html.escape(m['summary'])}</p>" + (
             "<p>Shows covered:</p><ul>" + "".join(f"<li>{html.escape(s)}</li>" for s in m["shows"]) + "</ul>" if m["shows"] else "")
-        items.append(dict(date=date, title=m["title"], url=f"{base}/episodes/{name}", size=os.path.getsize(dst),
+        items.append(dict(date=key, title=m["title"], url=f"{base}/episodes/{name}", size=os.path.getsize(dst),
                           secs=secs, pub=pub, txt=desc_txt, html=desc_html, summary=m["summary"]))
     items.sort(key=lambda i: i["pub"], reverse=True)
     x = html.escape
