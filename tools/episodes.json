@@ -53,5 +53,18 @@
     "title": "Better tools, harder choices: AI, Bitcoin and Australia's weight-loss pills",
     "summary": "Six episodes on oral GLP-1 medicines and Australian access; Théo Mogenet on debt and financial repression; Quinn Thompson on a delayed Fed pivot; AI power and human control; Sherif Mansour on product judgement and shared context; and Ran Neuner on selective crypto deployment. Headlines followed by deeper discussion. Recording dates matter: the AI Daily Brief, Wolf and Rollup conversations predate the Anthropic IPO.",
     "published": "2026-11-22T15:21:54+00:00"
+  },
+  "2026-11-23-science-ai": {
+    "title": "AI's promises meet the real world: Google, China and a greener Mars",
+    "summary": "Six episodes on China’s solo AI builders and business models; Anthropic’s rise and infrastructure costs; a reported AI-assisted mathematics proof; exoplanets and black holes; protected microbial production on Mars; and Google’s institutional blockchain and signing tools. Includes Japan’s disaster planning and US renter stress. How We Got Here was recorded before the IPO; scientific and market projections are attributed and qualified.",
+    "published": "2026-11-23T11:51:33+00:00",
+    "shows": [
+      "Space Nuts: Exoplanet Tilts, Black Hole Event Horizons & Helium Stars: Cosmic Questions Answered",
+      "Odd Lots: What a Town Full of Vibecoders Says About the Chinese Economy",
+      "How We Got Here with NLW: How Anthropic Went From AI Safety Outcast to the World's Most Important Company",
+      "The Economist: In the life of prime: AI’s latest maths triumph",
+      "Inner Cosmos with David Eagleman: Ep178 \"Can We Make Mars Green Again?\" with Erika DeBenedictis",
+      "Empire: Google’s Plan to Bring Wall Street Onchain | Rich Widmann"
+    ]
   }
 }
